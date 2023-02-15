@@ -1,0 +1,38 @@
+clude<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<conio.h>
+
+void pi(float h, float pesoideal,char sexo){
+	
+  if(sexo == 'f'){
+  
+  	pesoideal =(62.1*h) - 44.7;
+  	printf("seu peso ideal e: %fkg\n",pesoideal);
+  	
+  }else{
+  	pesoideal=(72.7*h)-58;
+  	printf("seu peso ideal e: %fkg",pesoideal);
+  }
+  
+}
+
+int main(){
+	
+	float h;
+	float pesoideal;
+	char sexo;
+	
+	printf("selecione o sexo (f/m):\n");
+	scanf("%c",&sexo);
+	printf("insira sua altura:\n");
+	scanf("%f",&h);
+	
+	pi(h,pesoideal,sexo);
+	
+	system("PAUSE");
+	return 0;
+	
+	
+	
+}
